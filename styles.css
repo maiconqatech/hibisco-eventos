@@ -144,10 +144,6 @@ p { margin: 0; }
     linear-gradient(160deg, #3a3126 0%, #241e17 100%);
 }
 .hero-foto.vazia::after { color: var(--ouro-claro); text-align: right; top: auto; bottom: 0; padding: 2.5rem 3rem; opacity: .5; }
-.hero::before {
-  content: ""; position: absolute; inset: 88px 24px 24px; z-index: -1;
-  border: 1px solid rgba(220,195,135,.3); pointer-events: none;
-}
 
 /* Brilhos dourados (bokeh) */
 .brilhos { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
@@ -469,7 +465,6 @@ p { margin: 0; }
   .proposta-texto { border-left: 0; padding-left: 0; border-top: 1px solid var(--linha); padding-top: 1.5rem; }
   .cards { grid-template-columns: 1fr; }
   .eventos-grid { grid-template-columns: 1fr; }
-  .hero::before { inset: 76px 12px 12px; }
   .final::before { inset: 12px; }
   .proposta::before { width: 340px; height: 340px; right: -140px; top: -60px; }
   .passos-lista { grid-template-columns: 1fr; gap: 2.2rem; }
