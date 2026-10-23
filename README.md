@@ -9,7 +9,7 @@ Coloque as fotos em `img/` com estes nomes. Enquanto uma foto não existir, apar
 | Arquivo | Onde aparece |
 |---|---|
 | `hero.jpg` | Fundo do topo (horizontal, alta resolução, ~2000px) |
-| `buffet.jpg`, `dj.jpg`, `fotografo.jpg`, `barman.jpg`, `decoracao.jpg`, `iluminacao.jpg` | Cards de "O que inclui" (4:3) |
+| `buffet.jpg`, `dj.jpg`, `canhao-seguidor.jpg`, `barman.jpg`, `decoracao.jpg`, `iluminacao.jpg` | Cards de "O que inclui" (4:3) |
 | `galeria-1.jpg` … `galeria-8.jpg` | Mosaico da galeria (1 e 4 verticais; 5 e 7 horizontais; demais quadradas) |
 
 ## WhatsApp
