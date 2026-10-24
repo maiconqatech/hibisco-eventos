@@ -167,6 +167,18 @@ p { margin: 0; }
   background: linear-gradient(100deg, rgba(25,20,14,.78) 0%, rgba(25,20,14,.45) 50%, rgba(25,20,14,.15) 100%);
 }
 .hero-conteudo { max-width: 1180px; }
+
+/* Desktop: foto à direita, texto sobre fundo escuro à esquerda */
+@media (min-width: 1001px) {
+  .hero { background: #1f1a14; }
+  .hero-foto { left: 42%; }
+  .hero-foto img { object-position: 50% 45%; }
+  .hero-veu {
+    background: linear-gradient(90deg,
+      #1f1a14 0%, #1f1a14 42%,
+      rgba(31,26,20,.75) 50%, rgba(31,26,20,.25) 66%, rgba(31,26,20,.05) 85%, rgba(31,26,20,.15) 100%);
+  }
+}
 .hero .sobretitulo { color: var(--ouro-claro); }
 .hero h1 { font-size: clamp(2.8rem, 7.2vw, 5.6rem); max-width: 14ch; }
 .hero h1 em { color: var(--ouro-claro); }
@@ -470,14 +482,14 @@ p { margin: 0; }
 @media (max-width: 1000px) {
   .menu { display: none; }
   .topo-inner { justify-content: space-between; }
+  .hero { align-items: flex-end; padding-bottom: 5.5rem; }
+  .hero-veu { background: linear-gradient(0deg, rgba(25,20,14,.94) 0%, rgba(25,20,14,.82) 45%, rgba(25,20,14,.45) 75%, rgba(25,20,14,.55) 100%); }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .eventos-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
   body { font-size: 1rem; }
-  .hero { align-items: flex-end; padding-bottom: 5.5rem; }
-  .hero-veu { background: linear-gradient(0deg, rgba(25,20,14,.85) 0%, rgba(25,20,14,.55) 55%, rgba(25,20,14,.3) 100%); }
   .so-desktop { display: none; }
   .so-mobile { display: inline; }
   .hero-acoes { gap: .75rem; margin-top: 2rem; }
