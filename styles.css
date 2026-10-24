@@ -518,7 +518,8 @@ p { margin: 0; }
   .rodape { padding-bottom: 6.5rem; }
   .hero-seta { display: none; }
   .proposta-grid { grid-template-columns: 1fr; }
-  .proposta-foto { aspect-ratio: 1 / 1; margin: 0 9px; }
+  .proposta-foto { aspect-ratio: 4 / 5; margin: 0 9px; }
+  .proposta-foto figcaption { top: .8rem; bottom: auto; left: .8rem; font-size: .95rem; }
   .sala-grid { grid-template-columns: 1fr; }
   .sala-foto { aspect-ratio: 4 / 5; }
   .sala .btn { width: 100%; }
