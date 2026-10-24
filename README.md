@@ -9,7 +9,7 @@ Coloque as fotos em `img/` com estes nomes. Enquanto uma foto não existir, apar
 | Arquivo | Onde aparece |
 |---|---|
 | `hero.jpg` | Fundo do topo (horizontal, alta resolução, ~2000px) |
-| `buffet.jpg`, `dj.jpg`, `canhao-seguidor.jpg`, `barman.jpg`, `decoracao.jpg`, `iluminacao.jpg` | Cards de "O que inclui" (4:3) |
+| `buffet.jpg`, `dj.jpg`, `canhao-seguidor.jpg`, `barman.jpg`, `decoracao.jpg`, `quarto-rosa.jpg` | Cards de "O que inclui" (4:3) |
 | `salao-hibisco.jpg` | Seção "Por que Hibisco" (4:5). Sem ela, a seção fica só com texto |
 | `sala-exclusiva.jpg` | Seção "Sala do aniversariante e dos noivos" (4:5) |
 
