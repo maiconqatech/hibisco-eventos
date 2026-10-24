@@ -242,6 +242,14 @@ p { margin: 0; }
   box-shadow: var(--sombra);
 }
 .proposta-foto figcaption::before { content: ""; width: 18px; height: 18px; background: var(--flor-ouro) center / contain no-repeat; }
+/* Sala exclusiva */
+.sala-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5.5rem); align-items: center; }
+.sala-foto img { object-position: 50% 40%; }
+.sala-sub { margin-top: 1.3rem; color: var(--cinza); max-width: 34rem; }
+.sala .sala-beneficios li { color: var(--tinta); }
+.sala .sala-beneficios li::before { filter: none; }
+.sobretitulo { text-wrap: balance; }
+
 /* Sem foto: volta ao layout só de texto (título à esquerda, texto à direita) */
 .proposta-foto.vazia { display: none; }
 .proposta-grid:has(.proposta-foto.vazia) { grid-template-columns: 1fr; }
@@ -511,6 +519,9 @@ p { margin: 0; }
   .hero-seta { display: none; }
   .proposta-grid { grid-template-columns: 1fr; }
   .proposta-foto { aspect-ratio: 1 / 1; margin: 0 9px; }
+  .sala-grid { grid-template-columns: 1fr; }
+  .sala-foto { aspect-ratio: 4 / 5; }
+  .sala .btn { width: 100%; }
   .proposta-grid:has(.proposta-foto.vazia) .proposta-conteudo { grid-template-columns: 1fr; gap: 0; }
   .proposta-grid:has(.proposta-foto.vazia) .proposta-texto { margin-top: 1.6rem; }
   .cards { grid-template-columns: 1fr; }
