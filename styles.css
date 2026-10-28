@@ -414,22 +414,28 @@ p { margin: 0; }
 
 /* CTA final */
 .final {
-  background:
-    radial-gradient(ellipse at 20% 0%, rgba(255,255,255,.25), transparent 50%),
-    var(--grad-ouro);
+  background: #1f1a14;
   color: var(--branco); text-align: center;
-  padding: clamp(4.5rem, 10vw, 7rem) 0;
+  padding: clamp(5rem, 11vw, 8rem) 0;
   position: relative; isolation: isolate; overflow: hidden;
 }
 .final::before {
   content: ""; position: absolute; inset: 20px; z-index: -1;
-  border: 1px solid rgba(255,255,255,.35); pointer-events: none;
+  border: 1px solid rgba(220,195,135,.45); pointer-events: none;
 }
-.final .brilhos span { background: radial-gradient(circle, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 70%); }
+.final-foto { position: absolute; inset: 0; z-index: -2; margin: 0; }
+.final-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 55%; }
+.final-foto::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(31,26,20,.35), transparent 75%),
+    linear-gradient(180deg, rgba(31,26,20,.62) 0%, rgba(31,26,20,.78) 100%);
+}
+.final .brilhos span { opacity: .5; }
 .final-inner { max-width: 44rem; }
-.final-flor { width: 54px; height: 54px; margin: 0 auto 1.4rem; color: rgba(255,255,255,.85); animation: girar 40s linear infinite; }
-.final h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
-.final h2 em { color: var(--branco); }
+.final-flor { width: 54px; height: 54px; margin: 0 auto 1.4rem; color: var(--ouro-claro); animation: girar 40s linear infinite; }
+.final h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.final h2 em { color: var(--ouro-claro); }
 .final p { margin: 1.2rem auto 2.2rem; color: rgba(255,255,255,.92); }
 .final-tel { margin: 1.4rem 0 0 !important; font-size: .95rem; }
 .final-tel a { border-bottom: 1px solid rgba(255,255,255,.6); }
